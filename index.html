@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+   
+
+ 
+</head>
+
+<body class="body1">
+   
+    
+  
+
+    
+    <div class="card">
+        
+        <h1 style=" padding: 10px; text-align: center; font-size: 30px; font-weight: bold; text-decoration: underline; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Prayer Time </h1>
+        
+        <hr>
+        <form  class="search"   onsubmit="time(); return false">
+         
+            
+            <input type="text" maxlength="20" class="search-bar" placeholder="Search" id="city">
+            
+     <button type="submit"><i class="fa fa-search"></i></button>
+       
+     
+    </form>
+    <div class="hidden" id="visible">
+        <div class="mainbox">
+            <div class="acolumn">
+    <div class="location">
+        <i class="fa fa-map-marker"></i> <p class="locationtext">Karachi</p>
+    </div>
+    
+    <div class="classboxprayer">
+    <div class="san">
+        <h1 class="hijiDay">Jin</h1>
+    
+        <h2 class="prayername">prayername</h2>
+         <p class="currentprayertime">05:06 PM</p>
+        </div>
+   
+        <div class="vl"></div>
+    
+    </div>
+    </div>
+    <span>
+      <img src="./pray-01.png" style="margin-left: 40%;" alt="Trulli" width="250" height="150">
+    </span>
+    
+        
+    
+        
+            
+            </div>
+        <div class="boxsunmon">
+
+            <div class="moon">
+                <i class="fa fa-moon-o"></i>
+           <p class="sunrise">sunset</p>
+           <p id="sunsettime" class="sunrise">02:25 am</p>
+            </div>
+
+
+          
+<div class="align">
+
+  
+            <div class="sun">
+               <i class="fa fa-sun-o"></i>
+               <i class="bi bi-sunset"></i>
+               <p class="sunrise">Sunrise</p>
+               <p id="sunrisetime" class="sunrise">02:25 am</p>
+               
+           </div></div>
+       </div>
+       <div class="daytime">
+             
+        <h2 ><i class="fa fa-calendar"></i>
+            <h2 class="day">Sunday/MAy</h2>
+            
+            </h2>
+        <h2 id="time">12:100 pM</h2>
+                </div>
+      
+        
+<div class="fiveprayerd" >
+
+<div class="allprayertime"><h2 class="fiveprayername">Fajar</h2> <p id="Fajar" class="fivePrayertime">04.50</p></div><hr>
+<div class="allprayertime"><h2 class="fiveprayername">Dhuhr</h2> <p id="Dhuhr" class="fivePrayertime">04.50</p></div><hr>
+<div class="allprayertime"><h2 class="fiveprayername">Asar</h2> <p id="Asar" class="fivePrayertime">04.50</p></div><hr>
+<div class="allprayertime"><h2 class="fiveprayername">Maghrib</h2> <p id="Maghrib" class="fivePrayertime">04.50</p></div><hr>
+<div class="allprayertime"><h2 class="fiveprayername">Esha</h2> <p id="Esha" class="fivePrayertime">04.50</p></div>
+
+</div>
+
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
